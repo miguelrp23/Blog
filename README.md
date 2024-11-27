@@ -104,6 +104,7 @@ Crea un archivo .env basándote en la configuración proporcionada en el archivo
 4. Configura Prisma:
 Utilizamos la base de datos acorde este esquema:
 
+![Captura de pantalla 2024-11-27 135654](https://github.com/user-attachments/assets/8599385f-1604-4fb8-b7a2-c6bedaf80fb8)
 
 
 npx prisma migrate dev --name init npx prisma generate
