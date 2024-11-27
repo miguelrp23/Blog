@@ -4,53 +4,91 @@
 El propósito de este ejercicio es crear una API que respalde una aplicación de blog con las siguientes funcionalidades:
 
 -Registro de usuarios.
+
 -Inicio de sesión.
+
 -Roles de usuario: admin y simpleUser.
 
--Funcionalidades para todos los usuarios:
+
+Funcionalidades para todos los usuarios:
+
 -Crear publicaciones.
+
 -Dar like a publicaciones.
+
 -Ver y eliminar sus propias publicaciones.
+
 -Editar datos personales.
+
 -Funcionalidades exclusivas del admin:
+
 -Ver todos los usuarios.
+
 -Bannear/reactivar usuarios.
+
 -Eliminar publicaciones. ( esto solo lo pueden hacer los admin o los autores de las publicaciones)
 
 1. Páginas del frontend:
+   
 -Formularios de registro
+
 -formulario de inicio de sesión.
+
 -Página de inicio con publicaciones ordenadas por fecha de creación.
+
 -Perfil de usuario para editar datos personales.
 
 2. paginas solo para admin( ver a todos los usuarios) en esta pagina solo podran acceder los admin y pueden banear y desbanear a los usuarios se encuentra en el perfil de usuario
--Requisitos adicionales:
+
+Requisitos adicionales:
+
 -Realizar el ejercicio en TypeScript.
+
 -Utilizar MySQL como base de datos con Prisma como ORM.
 
 
 - Nivel 1
 Documentar las rutas con Swagger.
+
 Implementar tests para cada endpoint.
+
 - Nivel 2
+  
 Posibilidad de ordenar publicaciones por popularidad y autor.
+
 - Nivel 3
+  
 Uso del patrón Clean Architecture.
+
 Barra de búsqueda en la página de inicio con función debounce.
+
 - Tecnologías Utilizadas
+  
 TypeScript
+
 Node.js
+
 Express
+
 Prisma ORM
+
 MySQL
+
 Swagger para documentación
+
 Jest para pruebas
+
 - Requisitos
 Node.js
+
 MySQL
+
 Prisma CLI
+
 npm como gestor de dependencias
+
   - Instalación
+    
 1.Clona el repositorio
  git clone https://github.com/miguelrp23/Blog.git
 
