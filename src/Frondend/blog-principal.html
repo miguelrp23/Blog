@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="blog-principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<div class="back">
+    <nav class="navbar">
+        <ul>
+            <li><a href="blog-user.html"><i class="fa-solid fa-user"></i>yo</a></li>
+            <li><a href="blog-inicio-Sesion.html"><i class="fa-solid fa-right-from-bracket"></i> cerrar sesion</a></li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="barra">
+        <form id="publicacionForm" enctype="multipart/form-data">
+            <input class="text" type="text" placeholder="¿Qué está pasando hoy?" id="textoPublicacion" name="texto">
+            <div class="buttons">
+                <button class="buttons" type="file" id="fotoPublicacion" accept="image/*"><i class="fa-solid fa-camera-retro"></i></i></button> 
+                <button class="buttons"   type="file" id="audioPublicacion" accept="audio/*"><i class="fa-solid fa-microphone"></i></button>
+                <button class="buttons"><i class="fa-solid fa-face-smile-wink"></i></button>
+                <button class = "enviar" type="button" onclick="publicacion()">Publicar</button>
+                
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <label for="sort-order">Ordenar publicaciones:</label>
+        <select class="post" id="sort-order">
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </div>
+      
+      <div>
+        <label class="text" for="search-input">Buscar publicaciones:</label>
+        <input class= "text" type="text" id="search-input" placeholder="Buscar en publicaciones">
+      </div>
+      
+      <div id="post-container">
+      </div>
+      
+      <div id="search-results-container">
+      </div>
+        
+</head>
+<body>
+    <div id="publicaciones-container">
+    <script src="blog.js"></script>
+
+   
+</body>
+</html>

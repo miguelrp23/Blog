@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="blog-registrer.css">
+</head>
+
+<style>
+
+</style>
+<body>
+    <div class="back">
+        <nav class="navbar">
+            <ul>
+                <li><a href="blog-registrer.html"><i class="fa-solid fa-user-tie"></i> Nueva Cuenta</a></li>
+                <li><a href="blog-inicio-Sesion.html"><i class="fa-solid fa-door-open"></i> Inicar Sesion</a></li>
+            </ul>
+        </nav>
+
+    </div>    
+    <div class="formulario"> 
+        <h3>Registro</h3>
+    
+        <input  class="controles" type="text" placeholder="ingrese su nombre" id="name" required> 
+        <input  class="controles"  type="text" placeholder="ingrese su apellido" id="lastName" required>
+        <input  class="controles"  type="email" placeholder="ingrese su email" id="email" required> 
+        <input  class = "controles "type="text" placeholder="user" id="user" required>
+        <input  class = "controles" type="password" placeholder="password" id="password" required>
+        <input  class="controles" type="text" placeholder="ingrese admin/usuario" id="role" required> 
+        <input  class="boton" type="button" value ="registrar" onclick = "Registrar()" > 
+        
+
+    </div>
+
+
+   
+
+</body>
+    <script src="blog.js"></script>
+</html>

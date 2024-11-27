@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="blog-user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<div class="back">
+    <nav class="navbar">
+        <ul>
+            
+            <li><a href="blog-principal.html"><i class="fa-solid fa-right-from-bracket"></i> Inicio</a></li>
+            
+        </ul>
+    </nav>
+</div>
+<body>
+    <h1 class="Cabeza" >Mi Perfil</h1>
+
+    <div class="Perfil">
+      <p><strong class="titulo" >Nombre:</strong> <span class="perfil" id="user-name"></span></p>
+      <p><strong class="titulo" >Apellido:</strong> <span class="perfil" id="user-lastname"></span></p>
+      <p><strong class="titulo" >Email:</strong> <span class="perfil" id="user-email"></span></p>
+      <p><strong class="titulo" >Usuario:</strong> <input class="text" type="text" id="edit-user" /></p>
+      <p><strong class="titulo" >Contraseña:</strong> <input class="text" type="password" id="edit-password" /></p>
+      <p><strong class="titulo" >Rol:</strong> <span class="perfil" id="user-role"></span></p>
+
+      <button class="boton" id="edit-button">Guardar cambios</button>
+    </div>
+    
+    <div id="admin-section" style="display: none;">
+        <a href="blog-admin.html">Lista de Usuarios</a>
+      </div>
+</body>
+<script src="blog.js"></script>
+</html>
