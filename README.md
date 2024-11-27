@@ -1,5 +1,6 @@
-Blog
-📄 Descripción
+##Blog
+
+- Descripción
 El propósito de este ejercicio es crear una API que respalde una aplicación de blog con las siguientes funcionalidades:
 
 Registro de usuarios.
