@@ -19,12 +19,20 @@ const router = Router();
  *           schema:
  *             type: object
  *             properties:
+ *               name:
+ *                 type: string
+ *               lastName:
+ *                  type: string
  *               email:
+ *                 type: string
+ *               user:
  *                 type: string
  *                 description: Correo electrónico del usuario
  *               password:
  *                 type: string
  *                 description: Contraseña del usuario
+ *               role:
+ *                  type: string
  *     responses:
  *       201:
  *         description: Usuario creado con éxito
@@ -48,9 +56,9 @@ router.post("/users", createUser);
  *           schema:
  *             type: object
  *             properties:
- *               email:
+ *               user:
  *                 type: string
- *                 description: Correo electrónico del usuario
+ *
  *               password:
  *                 type: string
  *                 description: Contraseña del usuario
@@ -71,7 +79,7 @@ router.post("/login", loginUser);
  *     tags:
  *       - Usuarios
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     responses:
  *       200:
  *         description: Información del usuario
@@ -89,7 +97,7 @@ router.get("/users/me", authenticateToken, getUserInfo);
  *     tags:
  *       - Usuarios
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     requestBody:
  *       required: true
  *       content:
@@ -97,9 +105,9 @@ router.get("/users/me", authenticateToken, getUserInfo);
  *           schema:
  *             type: object
  *             properties:
- *               email:
+ *               user:
  *                 type: string
- *                 description: Correo electrónico del usuario
+ *              
  *               password:
  *                 type: string
  *                 description: Nueva contraseña del usuario

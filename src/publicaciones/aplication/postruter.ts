@@ -13,7 +13,7 @@ const router = Router();
  *     tags:
  *       - Publicaciones
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     requestBody:
  *       required: true
  *       content:
@@ -57,7 +57,7 @@ router.get("/publicacion", getPosts);
  *     tags:
  *       - Publicaciones
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -84,7 +84,7 @@ router.delete("/publicacion/:id", authenticateToken, deletePost, verifyRole("adm
  *     tags:
  *       - Publicaciones
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -109,7 +109,7 @@ router.post("/publicacion/:id/like", authenticateToken, likePost);
  *     tags:
  *       - Publicaciones
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     parameters:
  *       - in: path
  *         name: id

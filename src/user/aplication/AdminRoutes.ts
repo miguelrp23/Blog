@@ -13,7 +13,7 @@ const router = Router();
  *     tags:
  *       - Administración
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     responses:
  *       200:
  *         description: Lista de usuarios
@@ -33,7 +33,7 @@ router.get("/users", authenticateToken, getAllUsers);
  *     tags:
  *       - Administración
  *     security:
- *       - bearerAuth: []
+ *       - token: []
  *     parameters:
  *       - in: path
  *         name: id
